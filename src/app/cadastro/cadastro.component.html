@@ -1,1 +1,26 @@
-<p>cadastro works!</p>
+<div class="uk-width-1-2 box">
+  <h1>Cadastrar</h1>
+  <hr>
+  <label for="nome" class="uk-form-label">Nome</label>
+  <input type="text" class="uk-input" [(ngModel)]="nome" id="nome" />
+  <label for="email" class="uk-form-label">E-mail</label>
+  <input type="text" class="uk-input" [(ngModel)]="email" id="email" />
+  <label for="nascimento" class="uk-form-label">E-mail</label>
+  <input type="date" class="uk-input" [(ngModel)]="nascimento" id="nascimento" />
+  <div class="uk-grid">
+    <div class="uk-width-1-2">
+      <label for="senha" class="uk-form-label">Senha</label>
+      <input type="password" class="uk-input" [(ngModel)]="senha" id="senha" />
+    </div>
+    <div class="uk-width-1-2">
+      <label for="senha" class="uk-form-label">Repita a Senha</label>
+      <input type="password" class="uk-input" [(ngModel)]="senha2" id="senha" />
+    </div>
+  </div>
+  <div class="uk-flex uk-flex-between">
+    <div>
+      <button class="uk-button uk-button-primary" (click)="cadastrar()">Cadastar</button>
+    </div>
+    <button class="uk-button uk-button-link" routerLink="/login" >Logar</button>
+  </div>
+</div>
