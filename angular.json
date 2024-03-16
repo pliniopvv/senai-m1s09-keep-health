@@ -5,7 +5,23 @@
   "projects": {
     "keep-health": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,9 +41,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/uikit/dist/css/uikit.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/uikit/dist/js/uikit.min.js"
+            ]
           },
           "configurations": {
             "production": {
