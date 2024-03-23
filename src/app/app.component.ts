@@ -15,7 +15,7 @@ export class AppComponent {
     let linksHidden = ['/login', '/cadastro'];
 
     for (let link of linksHidden)
-      if (window.location.pathname == link) return false;
+      if (window.location.pathname.indexOf(link) > -1) return false;
     return true;
   }
 }
