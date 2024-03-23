@@ -9,3 +9,13 @@
 .shadow {
   box-shadow: 10px 10px #000;
 }
+
+.maozinha {
+  transition: all 1s ease;
+}
+
+.maozinha:hover {
+  transition: all 1s ease;
+  background-color: #009;
+  cursor: pointer;
+}

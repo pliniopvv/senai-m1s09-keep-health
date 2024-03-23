@@ -10,9 +10,19 @@
     name="inputPesquisa"
   />
   <ng-container *ngFor="let item of list">
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2">
-      <h3 class="uk-card-title">{{ item.name }}</h3>
-      <p>{{ item.description }}</p>
+    <div
+      class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-2"
+      routerLink="{{ item.id }}"
+    >
+      <div class="uk-card-header">
+        <h3 class="uk-card-title">{{ item.name }}</h3>
+      </div>
+      <div class="uk-card-body">
+        <p>{{ item.description }}</p>
+      </div>
+      <div class="uk-card-footer">
+        <a class="uk-button uk-button-text">Leia Mais</a>
+      </div>
     </div>
   </ng-container>
 </div>

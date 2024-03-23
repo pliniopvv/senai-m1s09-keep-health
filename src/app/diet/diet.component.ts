@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Diet } from '../model/diet';
+import "./diet.mock";
 
 @Component({
   selector: 'app-diet',

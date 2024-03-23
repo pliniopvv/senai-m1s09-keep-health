@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DietComponent } from './diet/diet.component';
-import { DietDetailComponent } from './diet-detail/diet-detail.component';
+import { DietDetailComponent } from './diet/diet-detail/diet-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ConvertPipe } from './pipe/convert.pipe';
 
