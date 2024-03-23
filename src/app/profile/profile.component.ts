@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AddressService } from '../services/address.service';
+import { Cep } from '../model/cep';
 
 @Component({
   selector: 'app-profile',
@@ -18,6 +20,12 @@ export class ProfileComponent {
   senha: String = '';
   senha2: String = '';
 
+  cep: Cep;
+
+  constructor(private cepService: AddressService) {}
+
   // alterar() {}
-  pesquisar() {}
+  pesquisar() {
+    this.cepService.get(this.localizacao).then((cep) => this.cep = cep);
+  }
 }

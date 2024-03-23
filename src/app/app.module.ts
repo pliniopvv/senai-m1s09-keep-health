@@ -13,6 +13,7 @@ import { DietComponent } from './diet/diet.component';
 import { DietDetailComponent } from './diet/diet-detail/diet-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ConvertPipe } from './pipe/convert.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ConvertPipe } from './pipe/convert.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
