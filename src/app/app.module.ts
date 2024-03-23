@@ -9,6 +9,10 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DietComponent } from './diet/diet.component';
+import { DietDetailComponent } from './diet-detail/diet-detail.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ConvertPipe } from './pipe/convert.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     LoginComponent,
     HomeComponent,
-    CadastroComponent
+    CadastroComponent,
+    DietComponent,
+    DietDetailComponent,
+    ProfileComponent,
+    ConvertPipe
   ],
   imports: [
     BrowserModule,
