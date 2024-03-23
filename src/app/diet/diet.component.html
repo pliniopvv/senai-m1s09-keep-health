@@ -1,5 +1,14 @@
 <app-sidebar></app-sidebar>
 <div class="uk-flex uk-flex-wrap box">
+  <label for="pesquisa" class="uk-label">Pesquisa</label>
+  <input
+    type="text"
+    class="uk-input"
+    (change)="pesquisa()"
+    id="pesquisa"
+    [(ngModel)]="inputPesquisa"
+    name="inputPesquisa"
+  />
   <ng-container *ngFor="let item of list">
     <div class="uk-card uk-card-default uk-card-body uk-width-1-2">
       <h3 class="uk-card-title">{{ item.name }}</h3>
