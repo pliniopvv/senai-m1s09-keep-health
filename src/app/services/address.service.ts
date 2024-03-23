@@ -11,6 +11,6 @@ export class AddressService {
   constructor(private http: HttpClient) { }
 
   async get(cep: string) {
-    return await firstValueFrom(this.http.get<Cep>(`http://viacep.com.br/ws/${cep}/json`));
+    return await firstValueFrom(this.http.get<Cep>(`https://viacep.com.br/ws/${cep}/json`));
   }
 }
