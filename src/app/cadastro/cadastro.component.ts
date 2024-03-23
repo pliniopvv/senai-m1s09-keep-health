@@ -11,6 +11,8 @@ export class CadastroComponent {
   nome: String = '';
   email: String = '';
   nascimento: Date = new Date();
+  altura: number = 0;
+  peso: number = 0;
   senha: String = '';
   senha2: String = '';
 
@@ -21,6 +23,8 @@ export class CadastroComponent {
       let user = new User();
       user.nome = this.nome;
       user.email = this.email;
+      user.peso = this.peso;
+      user.altura = this.altura;
       user.nascimento = this.nascimento;
       user.senha = this.senha;
 

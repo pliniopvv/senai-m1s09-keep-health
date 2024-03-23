@@ -1,1 +1,27 @@
-<p>sidebar works!</p>
+<nav class="uk-navbar-container">
+  <div class="uk-container">
+    <div uk-navbar>
+      <div class="uk-navbar-center">
+        <div class="uk-navbar-center-left">
+          <ul class="uk-navbar-nav">
+            <li routerLink="/diet" routerLinkActive="uk-active"><a>Diet</a></li>
+            <li routerLink="/profile" routerLinkActive="uk-active">
+              <a>perfil</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <a routerLink="/home" routerLinkActive="uk-active" class="uk-navbar-item uk-logo">Home</a> -->
+        <div class="uk-navbar-center-right">
+          <ul class="uk-navbar-nav">
+            <li routerLink="/login" routerLinkActive="uk-active">
+              <a>Login</a>
+            </li>
+            <li routerLink="/cadastro" routerLinkActive="uk-active">
+              <a>Cadastro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
